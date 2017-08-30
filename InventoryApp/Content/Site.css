@@ -1,4 +1,20 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
+﻿#AddPart {
+    border: 5px solid grey;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 25px
+}
+
+#AddInventory {
+   
+   border: 5px solid grey; 
+   padding: 5px; 
+   border-radius: 20px;
+   margin: 25px
+}
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -18,7 +34,6 @@ textarea {
     max-width: 280px;
 }
 
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
@@ -28,4 +43,8 @@ textarea {
     .body-content {
         padding: 0;
     }
+}
+.CurrentInventory{
+    padding:15px;
+ 
 }
