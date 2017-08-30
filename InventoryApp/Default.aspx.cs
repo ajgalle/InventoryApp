@@ -32,7 +32,7 @@ namespace InventoryApp
                 {
                     if (FileUpload1.HasFile)
                     {
-                        if (FileUpload1.PostedFile.ContentType.ToLower() == "image/.jpeg" ||
+                        if (FileUpload1.PostedFile.ContentType.ToLower() == "image/jpeg" ||
                             FileUpload1.PostedFile.ContentType.ToLower()== "image/gif" ||
                             FileUpload1.PostedFile.ContentType.ToLower()=="image/jpg" ||
                             FileUpload1.PostedFile.ContentType.ToLower()=="image/png" ||
@@ -71,11 +71,15 @@ namespace InventoryApp
                             else
                             {
                                 lblStatusMessage.Text = "Please make sure your image is less than 100KB.";
+                                DropdownAddPartName.SelectedValue = "-1";
+
                             }
                         }
                         else
                         {
                             lblStatusMessage.Text = "Please only upload images. JPEGs with max width of 150px work best.";
+                            DropdownAddPartName.SelectedValue = "-1";
+
                         }
                     }
 

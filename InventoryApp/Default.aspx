@@ -15,7 +15,8 @@
             <div class="col-md-6 alert-info">
                 <a><strong id="tgtUnderTheHood" class="alert-info"> What's going on under the hood?</strong></a>
                 <div id ="divUnderTheHood" class="alert-info" style="display:none">
-                <ul><li>The app has been made mobile responsive using bootstrap and its client side functionality is powered by jQuery.</li>
+                <ul><li>Check out all the code on <a href="https://github.com/ajgalle/InventoryApp">github!</a></li>
+                    <li>The app has been made mobile responsive using bootstrap and its client side functionality is powered by jQuery.</li>
                     <li>The server side code is a mix of C# and ADO.net.</li>
                     <li>It uses a FileUpload control to allow user uploads of small JPEGs after a few rounds of validation occurs (controlling for file type, size, etc.)</li>
                     <li>It uses ADO.net commands to communicate to a MS SQL server. Each command incorporates SQL injection defense strategies.</li>
@@ -74,7 +75,7 @@
                     <HeaderStyle BorderStyle="None" />
                 </asp:GridView>
 
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbInventoryAppConnectionString %>" DeleteCommand="DELETE FROM [tblInventory] WHERE [PartID] = @PartID" InsertCommand="INSERT INTO [tblInventory] ([PartName], [QuantityInStock], [ImagePath]) VALUES (@PartName, @QuantityInStock, @ImagePath)" SelectCommand="SELECT * FROM [tblInventory]" UpdateCommand="UPDATE [tblInventory] SET [PartName] = @PartName, [QuantityInStock] = @QuantityInStock, [ImagePath] = @ImagePath WHERE [PartID] = @PartID">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbinventoryappConnectionString2 %>" DeleteCommand="DELETE FROM [tblInventory] WHERE [PartID] = @PartID" InsertCommand="INSERT INTO [tblInventory] ([PartName], [QuantityInStock], [ImagePath]) VALUES (@PartName, @QuantityInStock, @ImagePath)" SelectCommand="SELECT * FROM [tblInventory] ORDER BY [PartName]" UpdateCommand="UPDATE [tblInventory] SET [PartName] = @PartName, [QuantityInStock] = @QuantityInStock, [ImagePath] = @ImagePath WHERE [PartID] = @PartID">
                     <DeleteParameters>
                         <asp:Parameter Name="PartID" Type="Int32" />
                     </DeleteParameters>
