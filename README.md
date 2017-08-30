@@ -1,5 +1,7 @@
 # InventoryApp
-A web form with a masterpage made in Visual Studio Community 2017 and SQL Server 2014. jQuery, C#, ASP.net, ADO.net, bootstrap, and more!
+Check it out live <a href="http://inventoryapp.gear.host/"> here! </a>
+
+A web form with a masterpage made in Visual Studio Community 2017 and SQL Server 2014. It uses jQuery, C#, ASP.net, ADO.net, bootstrap, and more!
 
 What is this?
 
